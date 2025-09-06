@@ -1,187 +1,88 @@
-<img width="1943" height="1093" alt="image" src="https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850" />
+Got it 👍 Let’s replace the boilerplate template README with one that reflects your actual portfolio site (sakiralisaiyed.github.io).
 
-# DevPortfolio Template
+Here’s a ready-to-paste README.md you can put in your repo root:
 
-A modern, minimalist portfolio template built with Astro and Tailwind CSS. Perfect for developers looking to showcase their skills, experience, and projects in a clean, professional way.
+⸻
 
-This was completely rebuilt from the ground up from V1. This template was built to be entirely ready to go with a quick config edit (see below) but also provides the ability to easily extend in whatever way you want.
+🌐 Sakir Ali Saiyed — Portfolio
 
-This template also comes with `CLAUDE.md` and `.cursor/rules` files for easy integration with your existing AI workflows.
+This is my personal developer portfolio, built with Astro and Tailwind CSS v4.
+It showcases my background, skills, projects, and experience as a Senior Mobile Developer.
 
-> **📬 Connect & Share!**  
-> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/rfitzio).  
-> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
+Live site 👉 sakiralisaiyed.com
 
-## Preview
+⸻
 
-To view a live preview of the site, [click here](https://ryanfitzgerald.github.io/devportfolio/).
+🚀 Built With
+	•	Astro — modern static site framework
+	•	Tailwind CSS v4 — utility-first CSS
+	•	TypeScript — type-safe configuration
+	•	Tabler Icons — free, open-source icons
 
-## Built With
+⸻
 
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
+🧑‍💻 Portfolio Content
 
-## Updating the Template
+The site is configured from a single file: src/config.ts.
+This file controls:
+	•	Personal Info → name, title, description
+	•	Accent Color → site-wide theme color
+	•	Social Links → email, GitHub, LinkedIn, etc.
+	•	About Section → bio/summary
+	•	Skills → list of technologies
+	•	Projects → showcase with descriptions & links
+	•	Experience → job history with highlights
+	•	Education → academic background
 
-### Configuration
+If you remove a section from config.ts, the site will hide it automatically.
 
-The template is designed to be easily customizable through the `src/config.ts` file. This single file controls:
+⸻
 
-- **Personal Information**: Name, title, description
-- **Accent Color**: Primary color theme (changing this will change the accent color site wide)
-- **Social Links**: Email, LinkedIn, Twitter, GitHub (all optional)
-- **About Section**: Personal bio/description
-- **Skills**: List of technical skills
-- **Projects**: Project showcase with descriptions and links
-- **Experience**: Work history with bullet points
-- **Education**: Educational background and achievements
+📂 Project Structure
 
-If skills, projects, experience, or education are removed from the config, those sections will be hidden entirely.
-
-### Example structures
-
-Here's what the config data structure looks like for each section:
-
-#### Basic Information
-```typescript
-name: "Your Name",
-title: "Your Job Title",
-description: "Brief site description",
-accentColor: "#1d4ed8", // Hex color for theme
-```
-
-#### Social Links (all optional)
-```typescript
-social: {
-  email: "your-email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
-  github: "https://github.com/yourusername",
-}
-```
-
-#### About Section
-```typescript
-aboutMe: "A paragraph describing yourself, your background, interests, and what you're passionate about. This appears in the About section of your portfolio."
-```
-
-#### Skills
-```typescript
-skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker"]
-```
-
-#### Projects
-```typescript
-projects: [
-  {
-    name: "Project Name",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
-```
-
-#### Experience
-```typescript
-experience: [
-  {
-    company: "Company Name",
-    title: "Your Job Title",
-    dateRange: "Jan 2022 - Present",
-    bullets: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Reduced API response times by 40% through optimization",
-      "Mentored team of 5 junior developers",
-    ],
-  }
-]
-```
-
-#### Education
-```typescript
-education: [
-  {
-    school: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    dateRange: "2014 - 2018",
-    achievements: [
-      "Graduated Magna Cum Laude with 3.8 GPA",
-      "Dean's List all semesters",
-      "President of Computer Science Club"
-    ]
-  }
-]
-```
-
-### Icons
-
-The template uses [Tabler Icons](https://tabler.io/icons) for all icons. If you wish to add more icons and have it look consistent with what's already there, you can browse through their extensive icon library.
-
-## Project Structure
-
-```
-devportfolio/
+sakiralisaiyed.github.io/
 ├── public/
-│   └── favicon.svg          # Site favicon
+│   └── favicon.svg          # Favicon
 ├── src/
-│   ├── components/          # Astro components
-│   │   ├── About.astro      # About section
-│   │   ├── Education.astro  # Education section
-│   │   ├── Experience.astro # Work experience section
-│   │   ├── Footer.astro     # Site footer
-│   │   ├── Header.astro     # Navigation header
-│   │   ├── Hero.astro       # Hero/intro section
-│   │   └── Projects.astro   # Projects showcase
+│   ├── components/          # Astro components for each section
 │   ├── pages/
-│   │   └── index.astro      # Main page layout
+│   │   └── index.astro      # Main page
 │   ├── styles/
-│   │   └── global.css       # Global styles
-│   └── config.ts            # Site configuration
+│   │   └── global.css       # Tailwind global styles
+│   └── config.ts            # Site configuration (edit me!)
 ├── astro.config.mjs         # Astro configuration
-├── package.json             # Project dependencies
-├── tailwind.config.js       # Tailwind configuration
-└── tsconfig.json            # TypeScript configuration
-```
+├── package.json             # Dependencies
+└── tsconfig.json            # TypeScript config
 
-## Local Development
 
-If you'd like to run it locally:
+⸻
 
-```
-git clone https://github.com/RyanFitzgerald/devportfolio.git
-cd devportfolio
+⚡ Local Development
+
+Clone and run locally:
+
+git clone https://github.com/shaqir/sakiralisaiyed.github.io.git
+cd sakiralisaiyed.github.io
 npm install
-```
-
-After that, start up the Astro dev server with:
-
-```
 npm run dev
-```
 
-## Deployment
+Then open http://localhost:4321.
 
-The template can be deployed to any static hosting service easily (and in most cases, completely free). Here are some options:
+⸻
 
-- To deploy with Netlify, [click here](https://docs.astro.build/en/guides/deploy/netlify/).
-- To deploy with Vercel, [click here](https://docs.astro.build/en/guides/deploy/vercel/).
-- To deploy with GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/).
-- To deploy with Cloudflare Pages, [click here](https://docs.astro.build/en/guides/deploy/cloudflare/).
-- To deploy with Render, [click here](https://docs.astro.build/en/guides/deploy/render/).
+🌍 Deployment
 
-Want to deploy somewhere else? Find more guides [here](https://docs.astro.build/en/guides/deploy/).
+The site is deployed automatically via GitHub Actions → GitHub Pages:
+	•	Branch: main
+	•	Action: .github/workflows/deploy.yml
+	•	Domain: sakiralisaiyed.com
 
-## Changelog
+Custom domain + HTTPS are configured through GitHub Pages + GoDaddy DNS.
 
-To view the changelog, see CHANGELOG.md.
+⸻
 
-## License
+📜 License
 
-This project is fully and completely MIT. See LICENSE.md.
+This portfolio is open-sourced under the MIT License.
 
-## Questions?
-
-Feel free to reach out on [X (Twitter)](https://x.com/rfitzio) if you have any questions or need help.
+⸻
