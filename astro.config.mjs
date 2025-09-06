@@ -1,8 +1,10 @@
 // astro.config.mjs
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwind from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://sakiralisaiyed.com', // or your github.io URL
-  integrations: [tailwind()],
+  vite: {
+    plugins: [tailwind()],
+  },
 });
