@@ -4,7 +4,5 @@ import tailwind from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://sakiralisaiyed.com', // or your github.io URL
-  vite: {
-    plugins: [tailwind()],
-  },
+  vite: { plugins: [tailwind()] },
 });
