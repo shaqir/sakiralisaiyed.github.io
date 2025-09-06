@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Astro site to GitHub Pages
 
 on:
   push:
@@ -27,10 +27,10 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build (Astro outputs to ./dist)
+      - name: Build site
         run: npm run build
 
       - name: Upload artifact
