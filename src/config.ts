@@ -15,8 +15,8 @@ export const siteConfig = {
   social: {
     email: "sakirsaiyed29@gmail.com",
     github: "https://github.com/shaqir",
-    linkedin: "",   // add later
-    twitter: "",    // optional
+    linkedin: "https://www.linkedin.com/in/sakir-saiyed-57387762/",   
+    twitter: "https://x.com/sakir_saiyed_",    // optional
   },
 
   // ===== About =====
