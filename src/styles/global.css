@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Fix anchor scroll offset for sticky header */
+[id] {
+  scroll-margin-top: 5rem; /* adjust based on your header height */
+}
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
