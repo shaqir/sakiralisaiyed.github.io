@@ -1,9 +1,3 @@
-Got it 👍 Let’s replace the boilerplate template README with one that reflects your actual portfolio site (sakiralisaiyed.github.io).
-
-Here’s a ready-to-paste README.md you can put in your repo root:
-
-⸻
-
 🌐 Sakir Ali Saiyed — Portfolio
 
 This is my personal developer portfolio, built with Astro and Tailwind CSS v4.
