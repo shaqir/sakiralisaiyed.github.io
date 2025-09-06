@@ -33,23 +33,6 @@ This file controls:
 
 ---
 
-## 📂 Project Structure
-sakiralisaiyed.github.io/
-├── public/
-│   └── favicon.svg          # Favicon
-├── src/
-│   ├── components/          # Astro components for each section
-│   ├── pages/
-│   │   └── index.astro      # Main page
-│   ├── styles/
-│   │   └── global.css       # Tailwind global styles
-│   └── config.ts            # Site configuration (edit me!)
-├── astro.config.mjs         # Astro configuration
-├── package.json             # Dependencies
-└── tsconfig.json            # TypeScript configuration
-
----
-
 ## 🌍 Deployment
 
 The site is deployed automatically via **GitHub Actions → GitHub Pages**:
