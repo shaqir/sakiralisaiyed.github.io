@@ -1,39 +1,39 @@
-🌐 Sakir Ali Saiyed — Portfolio
+# 🌐 Sakir Ali Saiyed — Portfolio
 
-This is my personal developer portfolio, built with Astro and Tailwind CSS v4.
-It showcases my background, skills, projects, and experience as a Senior Mobile Developer.
+This is my personal developer portfolio, built with **Astro** and **Tailwind CSS v4**.  
+It showcases my background, skills, projects, and experience as a **Senior Mobile Developer**.
 
-Live site 👉 sakiralisaiyed.com
+👉 **Live site:** [sakiralisaiyed.com](https://sakiralisaiyed.com)
 
-⸻
+---
 
-🚀 Built With
-	•	Astro — modern static site framework
-	•	Tailwind CSS v4 — utility-first CSS
-	•	TypeScript — type-safe configuration
-	•	Tabler Icons — free, open-source icons
+## 🚀 Built With
+- [Astro](https://astro.build) — modern static site framework  
+- [Tailwind CSS v4](https://tailwindcss.com) — utility-first CSS  
+- [TypeScript](https://www.typescriptlang.org/) — type-safe configuration  
+- [Tabler Icons](https://tabler.io/icons) — free, open-source icons  
 
-⸻
+---
 
-🧑‍💻 Portfolio Content
+## 🧑‍💻 Portfolio Content
 
-The site is configured from a single file: src/config.ts.
+The site is configured from a single file: [`src/config.ts`](src/config.ts).  
 This file controls:
-	•	Personal Info → name, title, description
-	•	Accent Color → site-wide theme color
-	•	Social Links → email, GitHub, LinkedIn, etc.
-	•	About Section → bio/summary
-	•	Skills → list of technologies
-	•	Projects → showcase with descriptions & links
-	•	Experience → job history with highlights
-	•	Education → academic background
 
-If you remove a section from config.ts, the site will hide it automatically.
+- **Personal Info** → name, title, description  
+- **Accent Color** → site-wide theme color  
+- **Social Links** → email, GitHub, LinkedIn, etc.  
+- **About Section** → bio/summary  
+- **Skills** → list of technologies  
+- **Projects** → showcase with descriptions & links  
+- **Experience** → job history with highlights  
+- **Education** → academic background  
 
-⸻
+> If you remove a section from `config.ts`, the site will hide it automatically.
 
-📂 Project Structure
+---
 
+## 📂 Project Structure
 sakiralisaiyed.github.io/
 ├── public/
 │   └── favicon.svg          # Favicon
@@ -46,37 +46,22 @@ sakiralisaiyed.github.io/
 │   └── config.ts            # Site configuration (edit me!)
 ├── astro.config.mjs         # Astro configuration
 ├── package.json             # Dependencies
-└── tsconfig.json            # TypeScript config
+└── tsconfig.json            # TypeScript configuration
 
+---
 
-⸻
+## 🌍 Deployment
 
-⚡ Local Development
+The site is deployed automatically via **GitHub Actions → GitHub Pages**:
 
-Clone and run locally:
+- Branch: `main`  
+- Workflow: `.github/workflows/deploy.yml`  
+- Domain: [sakiralisaiyed.com](https://sakiralisaiyed.com)  
 
-git clone https://github.com/shaqir/sakiralisaiyed.github.io.git
-cd sakiralisaiyed.github.io
-npm install
-npm run dev
+Custom domain + HTTPS are configured through **GitHub Pages + GoDaddy DNS**.
 
-Then open http://localhost:4321.
+---
 
-⸻
+## 📜 License
 
-🌍 Deployment
-
-The site is deployed automatically via GitHub Actions → GitHub Pages:
-	•	Branch: main
-	•	Action: .github/workflows/deploy.yml
-	•	Domain: sakiralisaiyed.com
-
-Custom domain + HTTPS are configured through GitHub Pages + GoDaddy DNS.
-
-⸻
-
-📜 License
-
-This portfolio is open-sourced under the MIT License.
-
-⸻
+This portfolio is open-sourced under the [MIT License](LICENSE).
