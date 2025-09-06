@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 /* Fix anchor scroll offset for sticky header */
-[id] {
-  scroll-margin-top: 5rem; /* adjust based on your header height */
-}
+/* Leave space when jumping to #experience, #projects, etc. */
+[id] { scroll-margin-top: 5rem; } /* tweak if your header height differs */
+
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
