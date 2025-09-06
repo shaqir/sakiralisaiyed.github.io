@@ -10,5 +10,5 @@ export default defineConfig({
 });
 
 export default defineConfig({
-  site: 'https://sakiralisaiyed.github.io',
+  site: 'https://sakiralisaiyed.com'
 });
