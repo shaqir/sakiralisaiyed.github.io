@@ -1,28 +1,27 @@
 // src/config.ts
-// DevPortfolio (Astro) configuration for Sakir Ali Saiyed
-// All sections are optional: remove any array/field to hide its section.
+// Export a *named* constant called siteConfig (not default)
 
-export default {
+export const siteConfig = {
   // ===== Basic Info =====
   name: "Sakir Ali Saiyed",
   title: "Senior Mobile Developer — iOS • Flutter",
   description:
-    "10+ years building high-performance mobile apps with Swift, SwiftUI/Combine, Clean Architecture, and real-time data. Based in Calgary, AB.",
+    "10+ years building high-performance mobile apps with Swift, SwiftUI/Combine, Clean Architecture, and realtime data. Based in Calgary, AB.",
 
-  // Change the accent to any HEX you like (affects buttons, highlights)
-  accentColor: "#14b8a6", // teal-500
+  // Accent / theme color (if your theme uses it)
+  accentColor: "#14b8a6",
 
-  // ===== Social Links (all optional) =====
+  // ===== Social =====
   social: {
     email: "sakirsaiyed29@gmail.com",
     github: "https://github.com/shaqir",
-    linkedin: "", // add your LinkedIn profile URL when ready
-    twitter: "",  // optional
+    linkedin: "",   // add later
+    twitter: "",    // optional
   },
 
   // ===== About =====
   aboutMe:
-    "I’m a Senior Mobile Developer with 10+ years of experience shipping polished, high-performance apps for iOS and Flutter. I specialize in Swift, SwiftUI, Combine, Clean Architecture, and real-time data (WebSockets). I care about clean, testable code and delightful UX. I’m currently in Calgary, Alberta, studying AI and project management while building product-quality demo apps and helping teams modernize their mobile stacks.",
+    "I’m a Senior Mobile Developer with 10+ years of experience shipping polished, high-performance apps for iOS and Flutter. I specialize in Swift, SwiftUI, Combine, Clean Architecture, and realtime data (WebSockets). I care about clean, testable code and delightful UX. I’m currently in Calgary, studying AI and project management while building product-quality demo apps and helping teams modernize their mobile stacks.",
 
   // ===== Skills =====
   skills: [
@@ -47,21 +46,21 @@ export default {
       name: "iStocks — Zerodha-inspired Watchlist",
       description:
         "SwiftUI + Combine + Clean Architecture + SwiftData. Live quotes (WebSocket) with reconnection/backoff, smooth animated updates, and strong separation of concerns.",
-      link: "", // GitHub repo or live demo link
+      link: "", // repo or live link
       skills: ["Swift", "SwiftUI", "Combine", "SwiftData", "Clean Architecture"],
     },
     {
       name: "PhotoEditorApp — Clean Architecture iOS",
       description:
         "Production-grade DI and repository/use-case layers. Offline-first image pipeline, testable core logic, and modular design for maintainability.",
-      link: "", // GitHub repo link
+      link: "",
       skills: ["Swift", "UIKit", "Swift Concurrency", "DI", "Unit Tests"],
     },
     {
       name: "Flutter Commerce Kit",
       description:
         "Reference app for scalable Flutter architecture: feature modules, BLoC/Provider, Golden tests, and Codemagic CI/CD.",
-      link: "", // GitHub repo or demo
+      link: "",
       skills: ["Flutter", "Dart", "BLoC", "Codemagic"],
     },
   ],
@@ -83,8 +82,8 @@ export default {
       dateRange: "2017 — 2022",
       bullets: [
         "Owned end-to-end delivery for enterprise iOS features.",
-        "Mentored teams on SwiftUI/Combine and code quality practices.",
-        "Improved crash-free rate to >99.5% using Instruments and profiling.",
+        "Mentored teams on SwiftUI/Combine and code quality.",
+        "Improved crash-free rate to >99.5% via Instruments.",
       ],
     },
     {
@@ -93,7 +92,7 @@ export default {
       dateRange: "2013 — 2017",
       bullets: [
         "Shipped multiple App Store apps with 100k+ users.",
-        "Optimized performance and elevated user experience across releases.",
+        "Optimized performance and UX across releases.",
       ],
     },
   ],
@@ -105,7 +104,7 @@ export default {
       degree: "Integrated Artificial Intelligence Post-Diploma Certificate",
       dateRange: "2025 — 2026 (in progress)",
       achievements: [
-        "Courses: AI Governance & Ethics, Applied Statistics, Human-Centred AI, Predictive Analytics, Web & Cloud.",
+        "Courses: AI Governance & Ethics, Applied Stats, Human-Centred AI, Predictive Analytics, Web & Cloud.",
       ],
     },
     {
