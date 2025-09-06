@@ -1,92 +1,118 @@
-export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+// src/config.ts
+// DevPortfolio (Astro) configuration for Sakir Ali Saiyed
+// All sections are optional: remove any array/field to hide its section.
+
+export default {
+  // ===== Basic Info =====
+  name: "Sakir Ali Saiyed",
+  title: "Senior Mobile Developer — iOS • Flutter",
+  description:
+    "10+ years building high-performance mobile apps with Swift, SwiftUI/Combine, Clean Architecture, and real-time data. Based in Calgary, AB.",
+
+  // Change the accent to any HEX you like (affects buttons, highlights)
+  accentColor: "#14b8a6", // teal-500
+
+  // ===== Social Links (all optional) =====
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "sakirsaiyed29@gmail.com",
+    github: "https://github.com/shaqir",
+    linkedin: "", // add your LinkedIn profile URL when ready
+    twitter: "",  // optional
   },
+
+  // ===== About =====
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I’m a Senior Mobile Developer with 10+ years of experience shipping polished, high-performance apps for iOS and Flutter. I specialize in Swift, SwiftUI, Combine, Clean Architecture, and real-time data (WebSockets). I care about clean, testable code and delightful UX. I’m currently in Calgary, Alberta, studying AI and project management while building product-quality demo apps and helping teams modernize their mobile stacks.",
+
+  // ===== Skills =====
+  skills: [
+    "Swift (Swift 6 ready)",
+    "SwiftUI / UIKit",
+    "Combine / async-await",
+    "MVVM / Clean Architecture",
+    "REST / GraphQL",
+    "WebSockets / Realtime",
+    "SwiftData / Core Data",
+    "XCTest / ViewInspector",
+    "Git / GitHub / Code Review",
+    "CI/CD (GitHub Actions, Codemagic)",
+    "Flutter / Dart",
+    "Python (notebooks)",
+    "Project Management basics",
+  ],
+
+  // ===== Projects =====
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "iStocks — Zerodha-inspired Watchlist",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "SwiftUI + Combine + Clean Architecture + SwiftData. Live quotes (WebSocket) with reconnection/backoff, smooth animated updates, and strong separation of concerns.",
+      link: "", // GitHub repo or live demo link
+      skills: ["Swift", "SwiftUI", "Combine", "SwiftData", "Clean Architecture"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "PhotoEditorApp — Clean Architecture iOS",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Production-grade DI and repository/use-case layers. Offline-first image pipeline, testable core logic, and modular design for maintainability.",
+      link: "", // GitHub repo link
+      skills: ["Swift", "UIKit", "Swift Concurrency", "DI", "Unit Tests"],
     },
     {
-      name: "ExtensionKit",
+      name: "Flutter Commerce Kit",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Reference app for scalable Flutter architecture: feature modules, BLoC/Provider, Golden tests, and Codemagic CI/CD.",
+      link: "", // GitHub repo or demo
+      skills: ["Flutter", "Dart", "BLoC", "Codemagic"],
     },
   ],
+
+  // ===== Experience =====
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Tech Mahindra",
+      title: "Senior Flutter Engineer",
+      dateRange: "2022 — 2024",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Built cross-platform features with strong performance SLAs.",
+        "Led refactors toward modular architecture and CI/CD gates.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Volansys",
+      title: "Principal iOS Engineer",
+      dateRange: "2017 — 2022",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Owned end-to-end delivery for enterprise iOS features.",
+        "Mentored teams on SwiftUI/Combine and code quality practices.",
+        "Improved crash-free rate to >99.5% using Instruments and profiling.",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "OpenXcell",
+      title: "iOS Engineer",
+      dateRange: "2013 — 2017",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Shipped multiple App Store apps with 100k+ users.",
+        "Optimized performance and elevated user experience across releases.",
       ],
     },
   ],
+
+  // ===== Education =====
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "SAIT (School for Advanced Digital Technology)",
+      degree: "Integrated Artificial Intelligence Post-Diploma Certificate",
+      dateRange: "2025 — 2026 (in progress)",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "Courses: AI Governance & Ethics, Applied Statistics, Human-Centred AI, Predictive Analytics, Web & Cloud.",
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
+      school: "MacEwan University",
+      degree: "Project Management Certificate",
+      dateRange: "2025",
+      achievements: ["Capstone and coursework focused on practical PM frameworks."],
     },
   ],
 };
